@@ -53,6 +53,7 @@ namespace FabricModEasyDevelopmentProgram
         {
             FormClosing += new FormClosingEventHandler(FormNew_Closing);
         }
+        // 感谢 https://blog.csdn.net/dreamdonghui/article/details/84842768 !
         #endregion
     }
 }
