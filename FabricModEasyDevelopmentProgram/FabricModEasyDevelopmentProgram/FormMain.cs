@@ -21,5 +21,21 @@ namespace FabricModEasyDevelopmentProgram
         {
             Application.Exit();
         }
+
+        private void ButtonHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("点击\"打开\"按钮或按O键打开本地项目文件夹\n点击\"新建\"按钮或按N键新建项目文件夹\n点击\"退出\"按钮或按E键退出程序\n点击\"帮助\"按钮或按H键显示此对话框");
+        }
+
+        private void ButtonOpen_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
+            folderBrowserDialog.Description = "请选择文件夹路径";
+            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            {
+                string foldPath = folderBrowserDialog.SelectedPath;
+                MessageBox.Show("已选择文件夹:" + foldPath, "选择文件夹提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
     }
 }

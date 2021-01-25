@@ -43,6 +43,7 @@ namespace FabricModEasyDevelopmentProgram
             this.ButtonOpen.TabIndex = 0;
             this.ButtonOpen.Text = "打开(&O)";
             this.ButtonOpen.UseVisualStyleBackColor = true;
+            this.ButtonOpen.Click += new System.EventHandler(this.ButtonOpen_Click);
             // 
             // ButtonNew
             // 
@@ -71,6 +72,7 @@ namespace FabricModEasyDevelopmentProgram
             this.ButtonHelp.TabIndex = 3;
             this.ButtonHelp.Text = "帮助(&H)";
             this.ButtonHelp.UseVisualStyleBackColor = true;
+            this.ButtonHelp.Click += new System.EventHandler(this.ButtonHelp_Click);
             // 
             // FormMain
             // 
