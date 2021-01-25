@@ -1,5 +1,4 @@
-﻿
-namespace FabricModEasyDevelopmentProgram
+﻿namespace FabricModEasyDevelopmentProgram
 {
     partial class FormNew
     {
@@ -104,8 +103,11 @@ namespace FabricModEasyDevelopmentProgram
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.TextboxPath);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormNew";
             this.Text = "新建";
+            this.Load += new System.EventHandler(this.FormNew_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
