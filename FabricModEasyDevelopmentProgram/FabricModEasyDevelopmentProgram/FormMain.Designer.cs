@@ -32,7 +32,7 @@ namespace FabricModEasyDevelopmentProgram
             this.ButtonOpen = new System.Windows.Forms.Button();
             this.ButtonNew = new System.Windows.Forms.Button();
             this.ButtonExit = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.ButtonHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ButtonOpen
@@ -63,24 +63,26 @@ namespace FabricModEasyDevelopmentProgram
             this.ButtonExit.UseVisualStyleBackColor = true;
             this.ButtonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
-            // button1
+            // ButtonHelp
             // 
-            this.button1.Location = new System.Drawing.Point(93, 70);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "帮助(&H)";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButtonHelp.Location = new System.Drawing.Point(93, 70);
+            this.ButtonHelp.Name = "ButtonHelp";
+            this.ButtonHelp.Size = new System.Drawing.Size(75, 23);
+            this.ButtonHelp.TabIndex = 3;
+            this.ButtonHelp.Text = "帮助(&H)";
+            this.ButtonHelp.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(296, 202);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(180, 105);
+            this.Controls.Add(this.ButtonHelp);
             this.Controls.Add(this.ButtonExit);
             this.Controls.Add(this.ButtonNew);
             this.Controls.Add(this.ButtonOpen);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormMain";
             this.Text = "主页";
             this.ResumeLayout(false);
@@ -92,7 +94,7 @@ namespace FabricModEasyDevelopmentProgram
         private System.Windows.Forms.Button ButtonOpen;
         private System.Windows.Forms.Button ButtonNew;
         private System.Windows.Forms.Button ButtonExit;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button ButtonHelp;
     }
 }
 
