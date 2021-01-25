@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace FabricModEasyDevelopmentProgram
 {
-    class PublicClassse
+    public class PublicClassse
     {
+        public static FormMain FM = new FormMain();
+        public static FormNew FN = new FormNew();
     }
 }

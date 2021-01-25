@@ -53,6 +53,7 @@ namespace FabricModEasyDevelopmentProgram
             this.ButtonNew.TabIndex = 1;
             this.ButtonNew.Text = "新建(&N)";
             this.ButtonNew.UseVisualStyleBackColor = true;
+            this.ButtonNew.Click += new System.EventHandler(this.ButtonNew_Click);
             // 
             // ButtonExit
             // 

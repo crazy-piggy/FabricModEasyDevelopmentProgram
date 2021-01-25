@@ -29,13 +29,19 @@ namespace FabricModEasyDevelopmentProgram
 
         private void ButtonOpen_Click(object sender, EventArgs e)
         {
-            FolderBrowserDialog folderBrowserDialog = new FolderBrowserDialog();
-            folderBrowserDialog.Description = "请选择文件夹路径";
-            if (folderBrowserDialog.ShowDialog() == DialogResult.OK)
+            FolderBrowserDialog FBD = new FolderBrowserDialog();
+            FBD.Description = "请选择文件夹路径";
+            if (FBD.ShowDialog() == DialogResult.OK)
             {
-                string foldPath = folderBrowserDialog.SelectedPath;
+                string foldPath = FBD.SelectedPath;
                 MessageBox.Show("已选择文件夹:" + foldPath, "选择文件夹提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
+        }
+
+        private void ButtonNew_Click(object sender, EventArgs e)
+        {
+            Hide();
+            PublicClassse.FN.Show();
         }
     }
 }
