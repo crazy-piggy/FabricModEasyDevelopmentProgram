@@ -56,9 +56,9 @@
             // 
             // ButtonExit
             // 
-            this.ButtonExit.Location = new System.Drawing.Point(12, 39);
+            this.ButtonExit.Location = new System.Drawing.Point(12, 41);
             this.ButtonExit.Name = "ButtonExit";
-            this.ButtonExit.Size = new System.Drawing.Size(75, 23);
+            this.ButtonExit.Size = new System.Drawing.Size(167, 23);
             this.ButtonExit.TabIndex = 3;
             this.ButtonExit.Text = "退出(&E)";
             this.ButtonExit.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@
             // 
             // ButtonBack
             // 
-            this.ButtonBack.Location = new System.Drawing.Point(93, 39);
+            this.ButtonBack.Location = new System.Drawing.Point(185, 41);
             this.ButtonBack.Name = "ButtonBack";
-            this.ButtonBack.Size = new System.Drawing.Size(142, 23);
+            this.ButtonBack.Size = new System.Drawing.Size(250, 23);
             this.ButtonBack.TabIndex = 4;
             this.ButtonBack.Text = "关闭并返回到主页(&B)";
             this.ButtonBack.UseVisualStyleBackColor = true;
@@ -82,10 +82,11 @@
             this.ButtonDownload.TabIndex = 5;
             this.ButtonDownload.Text = "下载(&D)";
             this.ButtonDownload.UseVisualStyleBackColor = true;
+            this.ButtonDownload.Click += new System.EventHandler(this.ButtonDownload_Click);
             // 
             // ButtonHelp
             // 
-            this.ButtonHelp.Location = new System.Drawing.Point(241, 39);
+            this.ButtonHelp.Location = new System.Drawing.Point(441, 42);
             this.ButtonHelp.Name = "ButtonHelp";
             this.ButtonHelp.Size = new System.Drawing.Size(75, 23);
             this.ButtonHelp.TabIndex = 6;
@@ -97,7 +98,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(595, 307);
+            this.ClientSize = new System.Drawing.Size(528, 77);
             this.Controls.Add(this.ButtonHelp);
             this.Controls.Add(this.ButtonDownload);
             this.Controls.Add(this.ButtonBack);

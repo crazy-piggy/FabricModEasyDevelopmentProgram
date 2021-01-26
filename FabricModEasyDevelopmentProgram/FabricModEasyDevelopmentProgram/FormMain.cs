@@ -33,15 +33,15 @@ namespace FabricModEasyDevelopmentProgram
             FBD.Description = "请选择文件夹路径";
             if (FBD.ShowDialog() == DialogResult.OK)
             {
-                string foldPath = FBD.SelectedPath;
-                MessageBox.Show("已选择文件夹:" + foldPath, "选择文件夹提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                string FoldPath = FBD.SelectedPath;
+                MessageBox.Show("已选择文件夹:" + FoldPath, "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void ButtonNew_Click(object sender, EventArgs e)
         {
             Hide();
-            PublicClassse.FN.Show();
+            PublicClasses.FN.Show();
         }
     }
 }

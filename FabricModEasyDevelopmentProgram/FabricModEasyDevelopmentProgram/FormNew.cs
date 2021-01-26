@@ -36,7 +36,7 @@ namespace FabricModEasyDevelopmentProgram
         private void ButtonBack_Click(object sender, EventArgs e)
         {
             Hide();
-            PublicClassse.FM.Show();
+            PublicClasses.FM.Show();
         }
 
         private void ButtonHelp_Click(object sender, EventArgs e)
@@ -55,5 +55,10 @@ namespace FabricModEasyDevelopmentProgram
         }
         // 感谢 https://blog.csdn.net/dreamdonghui/article/details/84842768 !
         #endregion
+
+        private void ButtonDownload_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
