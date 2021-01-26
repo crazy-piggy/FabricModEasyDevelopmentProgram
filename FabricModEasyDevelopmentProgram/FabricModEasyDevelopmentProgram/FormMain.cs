@@ -35,6 +35,8 @@ namespace FabricModEasyDevelopmentProgram
             {
                 string FoldPath = FBD.SelectedPath;
                 MessageBox.Show("已选择文件夹:" + FoldPath, "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Hide();
+                PublicClasses.FE.Show();
             }
         }
 

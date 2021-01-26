@@ -10,5 +10,6 @@ namespace FabricModEasyDevelopmentProgram
     {
         public static FormMain FM = new FormMain();
         public static FormNew FN = new FormNew();
+        public static FormEdit FE = new FormEdit();
     }
 }
