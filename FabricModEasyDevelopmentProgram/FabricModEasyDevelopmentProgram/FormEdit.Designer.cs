@@ -110,8 +110,10 @@ namespace FabricModEasyDevelopmentProgram
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ButtonExit);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
             this.Name = "FormEdit";
-            this.Text = "FormEdit";
+            this.Text = "编辑";
             this.Load += new System.EventHandler(this.FormEdit_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
